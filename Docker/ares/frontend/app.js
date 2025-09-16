@@ -1,33 +1,34 @@
-// docker build -t ares-frontend -f Dockerfile-frontend .
-// docker run -it -p 5000:3000 ares-frontend
 var express = require('express');
+var path = require('path');
 var app = express();
 
-app.set('view engine', 'ejs');
+// Serve static files from public directory
+app.use(express.static('public'));
 
 const URL = process.env.BACKEND_URL || 'http://localhost:8000/api';
 
 const fetch = (...args) =>
     import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
-app.get('/', async function (req, res) {
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.get('/api/data', async function (req, res) {
     const options = {
         method: 'GET'
     };
-    fetch(URL, options)
-        .then(res => res.join())
-        .then(json => console.log(json))
-        .catch(err => console.error('error:' + err));
+    
     try {
         let response = await fetch(URL, options);
-        response = await response.json();
-        res.render('index', response)
+        const data = await response.json();
+        res.json(data);
     } catch (err) {
-        console.log(err);
-        res.status(500).json({ msg: `Internal Server Error.` });
+        console.log('Backend fetch error:', err);
+        res.status(500).json({ msg: `Internal Server Error: ${err.message}` });
     }
 });
 
 app.listen(3000, function () {
-    console.log('Ares listining on port 3000!')
+    console.log('Ares listening on port 3000!')
 });
