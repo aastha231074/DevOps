@@ -22,7 +22,7 @@ A Docker Image is a read-only template with instructions for creating a Docker c
 
 You can get images from a public or private Container Registry, which is a repository for storing and distributing images. The most popular public registry is Docker Hub.
 
-Here are links to your projects on Docker Hub:
+Here are links to my projects on Docker Hub:
 - [ares-frontend](https://hub.docker.com/repository/docker/ahastha1904/ares-frontend)
 - [ares-backend](https://hub.docker.com/repository/docker/ahastha1904/ares-backend)
 
