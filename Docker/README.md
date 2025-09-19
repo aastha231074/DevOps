@@ -41,7 +41,7 @@ docker pull ubuntu:20.04
 
 **`docker tag <source_image> <target_image>`**: Creates a tag TARGET_IMAGE that refers to SOURCE_IMAGE. This is useful for renaming an image or preparing it for pushing to a registry.
 ```bash
-docker tag my-app:v1 ahastha1904/my-app:v1
+docker tag my-app:v1 aastha1904/my-app:v1
 ```
 
 ### Container Management
