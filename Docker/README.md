@@ -215,7 +215,7 @@ volumes:
 
 **`docker compose exec <service_name> <command>`**: Runs a command inside a running service container.
 
-*Legacy Note*: The older `docker-compose` (with hyphen) command still works if you have the standalone Docker Compose tool installed, but Docker recommends using the newer `docker compose` (without hyphen) plugi
+*Legacy Note*: The older `docker-compose` (with hyphen) command still works if you have the standalone Docker Compose tool installed, but Docker recommends using the newer `docker compose` (without hyphen) plugin
 
 ## Docker Volumes: Persistent Data Storage
 
