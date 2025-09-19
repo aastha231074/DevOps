@@ -48,7 +48,7 @@ docker tag my-app:v1 aastha1904/my-app:v1
 
 **`docker run <image_name>`**: Creates and starts a new container from an image.
 
-**`docker run -it <image_name>`**: The `-i` (interactive) and `-t` (tty) flags are often used together to attach your local terminal to the container's standard input and output, allowing you to interact with it.
+**`docker run -itd <image_name>`**: The `-it` (interactive) and `-d` (detached) flags are often used together to attach your local terminal to the container's standard input and output, allowing you to interact with it.
 
 **`docker run -p <host_port>:<container_port> <image_name>`**: The `-p` (port mapping) flag maps a port on your local machine to a port inside the container, making the application accessible from the outside.
 ```bash
