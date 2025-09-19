@@ -199,9 +199,23 @@ volumes:
 
 ### Compose Commands
 
-**`docker-compose up`**: Builds, creates, and starts all services defined in the docker-compose.yaml file. Use the `-d` flag to run in detached mode (in the background).
+**Note**: Docker has updated their Compose tool. The modern approach is to use `docker compose` (without a hyphen) instead of `docker-compose` (with a hyphen). The new `docker compose` command is a plugin built into modern Docker installations and is the recommended way going forward.
 
-**`docker-compose down`**: Stops and removes all containers, networks, and volumes created by `docker-compose up`.
+**`docker compose up`**: Builds, creates, and starts all services defined in the docker-compose.yaml file. Use the `-d` flag to run in detached mode (in the background).
+
+**`docker compose down`**: Stops and removes all containers, networks, and volumes created by `docker compose up`.
+
+**`docker compose ps`**: Lists all running services in the current compose project.
+
+**`docker compose logs`**: Shows logs from all services. You can specify a service name to see logs for just that service.
+
+**`docker compose build`**: Builds or rebuilds services that have a `build` configuration.
+
+**`docker compose pull`**: Pulls the latest versions of images for services that use pre-built images.
+
+**`docker compose exec <service_name> <command>`**: Runs a command inside a running service container.
+
+*Legacy Note*: The older `docker-compose` (with hyphen) command still works if you have the standalone Docker Compose tool installed, but Docker recommends using the newer `docker compose` (without hyphen) plugi
 
 ## Docker Volumes: Persistent Data Storage
 
