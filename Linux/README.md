@@ -42,7 +42,7 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | Command | Description | Example |
 |---------|-------------|---------|
 | `ls` | List directory contents | `ls -la` (detailed list with hidden files) |
-| `cd` | Change directory | `cd /home/user`or `cd ..` |
+| `cd` | Change directory | `cd /home/user` or `cd ..` or `cd` or `cd -` (last directory you were on) |
 | `pwd` | Print working directory | `pwd` |
 | `mkdir` | Create new directory | `mkdir newfolder` |
 | `rmdir` | Remove empty directory | `rmdir oldfolder` |
