@@ -105,7 +105,7 @@ Linux uses a hierarchical file system structure where everything starts at the r
 |---------|-------------|---------|
 | `apt update` | Update package list | `sudo apt update` |
 | `apt upgrade` | Upgrade installed packages | `sudo apt upgrade` |
-| `apt install` | Install new package | `sudo apt install nginx` |
+| `apt install` | Install new package | `sudo apt install nginx` or `sudo apt install cowsay` |
 | `apt remove` | Remove package | `sudo apt remove package-name` |
 | `apt search` | Search for packages | `apt search keyword` |
 
