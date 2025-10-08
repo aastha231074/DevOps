@@ -42,11 +42,11 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | Command | Description | Example |
 |---------|-------------|---------|
 | `ls` | List directory contents | `ls -la` (detailed list with hidden files) |
-| `cd` | Change directory | `cd /home/user`, `cd ..` |
+| `cd` | Change directory | `cd /home/user`or `cd ..` |
 | `pwd` | Print working directory | `pwd` |
 | `mkdir` | Create new directory | `mkdir newfolder` |
 | `rmdir` | Remove empty directory | `rmdir oldfolder` |
-| `rm` | Remove files or directories | `rm file.txt` or `rm -r folder/` |
+| `rm` | Remove files or directories | `rm file.txt` or `rm -r folder/` or `rm -rf folder/`(-r recursive, -f force) |
 | `cp` | Copy files or directories | `cp source.txt dest.txt` |
 | `mv` | Move or rename files | `mv old.txt new.txt` |
 | `touch` | Create empty file or update timestamp | `touch newfile.txt` |
