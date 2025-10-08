@@ -76,6 +76,9 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | `top` | Display running processes | `top` |
 | `ps` | Show process status | `ps aux` |
 | `kill` | Terminate a process | `kill 1234` or `kill -9 1234` |
+| `clear` | Clear the terminal screen | `clear` (or press Ctrl+L) |
+| `neofetch` | Display system info with logo | `neofetch` |
+| `uptime` | Show system uptime and load | `uptime` |
 
 ### File Search and Text Processing
 
@@ -85,6 +88,8 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | `grep` | Search text patterns | `grep "error" logfile.txt` or `cat log.txt \| grep error -n` |
 | `locate` | Quick file search (uses database) | `locate filename` |
 | `which` | Show full path of commands | `which python` |
+| `whereis` | Locate binary, source, and manual pages | `whereis ls` |
+| `whatis` | Display one-line command description | `whatis grep` |
 | `wc` | Count lines, words, characters | `wc -l file.txt` |
 
 ### Network Commands
@@ -128,6 +133,8 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | `echo` | Display variable value | `echo $HOME` |
 | `env` | Display all environment variables | `env` |
 | `unset` | Remove environment variable | `unset VARIABLE_NAME` |
+| `alias` | Create command shortcut | `alias ll='ls -la'` |
+| `unalias` | Remove alias | `unalias ll` |
 
 ### Compression and Archives
 
