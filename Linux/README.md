@@ -47,13 +47,15 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | `mkdir` | Create new directory | `mkdir newfolder` |
 | `rmdir` | Remove empty directory | `rmdir oldfolder` |
 | `rm` | Remove files or directories | `rm file.txt` or `rm -r folder/` or `rm -rf folder/`(-r recursive, -f force) |
-| `cp` | Copy files or directories | `cp source.txt dest.txt` |
-| `mv` | Move or rename files | `mv old.txt new.txt` |
+| `cp` | Copy files or directories | `cp source.txt dest.txt` or `cp source.txt dest/` |
+| `mv` | Move or rename files | `mv old.txt new.txt` or `mv file.txt folder/` |
 | `touch` | Create empty file or update timestamp | `touch newfile.txt` |
+| `ln` | Create links between 2 files or folders | `ln -s /path/to/file linkname` (symbolic link) |
 | `cat` | Display file contents | `cat file.txt` |
 | `less` | View file contents (paginated) | `less largefile.txt` |
 | `head` | Display first lines of file | `head -n 10 file.txt` |
 | `tail` | Display last lines of file | `tail -f /var/log/syslog` |
+| `man` | Access manual for any linux commands | `man command` |
 
 ### File Permissions and Ownership
 
@@ -67,7 +69,7 @@ Linux uses a hierarchical file system structure where everything starts at the r
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `uname` | Display system information | `uname -a` |
+| `uname` | Display system information | `uname -a` or `uname -mrs`|
 | `df` | Show disk space usage | `df -h` |
 | `du` | Show directory space usage | `du -sh /home` |
 | `free` | Display memory usage | `free -h` |
@@ -80,7 +82,7 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | Command | Description | Example |
 |---------|-------------|---------|
 | `find` | Search for files | `find /home -name "*.txt"` |
-| `grep` | Search text patterns | `grep "error" logfile.txt` |
+| `grep` | Search text patterns | `grep "error" logfile.txt` or `cat log.txt \| grep error -n` |
 | `locate` | Quick file search (uses database) | `locate filename` |
 | `which` | Show full path of commands | `which python` |
 | `wc` | Count lines, words, characters | `wc -l file.txt` |
@@ -118,11 +120,20 @@ Linux uses a hierarchical file system structure where everything starts at the r
 | `passwd` | Change user password | `passwd` |
 | `groups` | Display user groups | `groups username` |
 
+### Environment Variables
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `export` | Set environment variable | `export PATH=$PATH:/new/path` |
+| `echo` | Display variable value | `echo $HOME` |
+| `env` | Display all environment variables | `env` |
+| `unset` | Remove environment variable | `unset VARIABLE_NAME` |
+
 ### Compression and Archives
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `tar` | Create/extract archives | `tar -xzf archive.tar.gz` |
+| `tar` | Create/extract archives | `tar -cvf compressed-folder.tar folder` or `tar -xvf compressed-folder.tar` |
 | `gzip` | Compress files | `gzip file.txt` |
 | `gunzip` | Decompress files | `gunzip file.txt.gz` |
 | `zip` | Create ZIP archives | `zip archive.zip file1 file2` |
