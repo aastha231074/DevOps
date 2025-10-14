@@ -6,10 +6,24 @@
     <title>Sign Up Form</title>    
 </head>
 <body>
-    <h1>Welcome to the Flask App!</h1>
-    <p>This is a simple Flask application.</p>
+    <h1>Welcome to the Signup Page</h1>
     <p>Today is a {{ day_of_week }}</p>
     <p>The time is {{ current_time }}</p>
+
+    <div class=""centered>
+        <form action="/submit" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="password">Password</label>  
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <br>    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 <style>
