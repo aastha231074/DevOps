@@ -32,6 +32,11 @@ def submit():
     else:
         return "Please provide both name and email."
 
+@app.route('/view')
+def view():
+    entries = list(collection.find({}, {'_id': 0}))
+    return render_template('view.html', entries=entries)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
