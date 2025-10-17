@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os 
 from pymongo.mongo_client import MongoClient
@@ -31,7 +31,7 @@ def view():
     for item in data:
         print(item)
         del item['_id']
-    return {'data': data}
+    return jsonify({'data': data})
 
 
 if __name__ == '__main__':
