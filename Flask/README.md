@@ -130,3 +130,25 @@ For a comprehensive guide on FastAPI with examples and documentation, check out:
 - **Flask Official Documentation**: https://flask.palletsprojects.com/
 - **FastAPI Official Documentation**: https://fastapi.tiangolo.com/
 - **REST API Best Practices**: https://restfulapi.net/
+
+## Screeshots of the running application 
+
+<figure>
+  <img src="./screenshots/sigin_page.png" alt="Sign-in page">
+  <figcaption>Sign-in page where users enter their credentials</figcaption>
+</figure>
+
+<figure>
+  <img src="./screenshots/submit.png" alt="Submit page">
+  <figcaption>Form submission page</figcaption>
+</figure>
+
+<figure>
+  <img src="./screenshots/get_data.png" alt="Get data page">
+  <figcaption>Data retrieval interface</figcaption>
+</figure>
+
+<figure>
+  <img src="./screenshots/view.png" alt="View page">
+  <figcaption>View page displaying the results</figcaption>
+</figure>
