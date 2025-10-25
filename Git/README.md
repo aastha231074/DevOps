@@ -384,4 +384,4 @@ git help commit
 
 ![My Image](./screenshots/merge.png)
 
-![My Image](./screenshots/merge_2.png)
+![My Image](./screenshots/merge_2.png)   
