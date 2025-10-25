@@ -227,4 +227,4 @@ git help commit
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Code! 🚀**
